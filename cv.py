@@ -3,6 +3,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    rendered = render_template("index.html")
+    print(rendered)
     return render_template("index.html")
 
 @app.route("/downloadcv")
