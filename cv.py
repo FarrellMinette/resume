@@ -19,5 +19,9 @@ def linkedin():
 def github():
     return redirect("https://github.com/FarrellMinette", code=302)
 
+@app.route("/DataEngineering")
+def dataeng():
+    return redirect("https://www.ee.sun.ac.za/beng-electrical-and-electronic-data-engineering-specialisation/", code=302)
+
 if __name__ == '__main__':
     app.run(debug = True, port=3000)
