@@ -1,5 +1,7 @@
 from flask import Flask, render_template, send_file, redirect
 app = Flask(__name__)
+app.config['FREEZER_BASE_URL'] = 'https://farrellminette.github.io/resume/'
+app.config['FREEZER_DESTINATION'] = 'public'
 
 @app.route("/")
 def index():
